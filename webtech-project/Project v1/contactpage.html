@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        form{
+            margin-left: 100px;
+            margin-right: 100px;
+            background-color: lightgray;
+            color: rgb(3, 3, 131);
+        }
+        h1{
+            text-align: center;
+            font-size: 3.em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1> 
+  
+    <form>
+         <label for="last name">Last Name:</label>
+         <input
+             type="text"
+             id="Last Name"
+             name="last name"
+             maxlength="100"
+             placeholder="Last Name"
+         />
+         <br>
+         <br>
+         <label for="first name">First Name:</label>
+         <input
+             type="text"
+             id="First Name"
+             name="first name"
+             maxlength="100"
+             placeholder="First Name"
+         />
+         <br>
+         <br>
+         <label for="email">Email Address:</label>
+         <input
+             type="text"
+             id="Email Address"
+             name="Email Address"
+             maxlength="100"
+             placeholder="Email Address"
+         />
+     <br>
+     <br>
+     <div>
+         <div>
+             <label for="comments">Leave a Reply:</label>
+         </div>
+     </div>
+     <div>
+         <textarea
+             id="comments"
+             name="comments"
+             rows="5"
+             cols="25"
+             placeholder="Enter your comment here..."
+         ></textarea>
+     </div>    
+     </div>
+     <br>
+     <br>
+     <button type="submit" name="submit-button">
+         SUBMIT 
+     </button>
+    </form>
+ </body>     
+</html>
