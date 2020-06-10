@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex13</title>
+  </head>
+  <body>
+    <h1>Manipulating Styles and Images</h1>
+    <div>
+      <img src="images/tiger1.jpg" alt="Tiger 1" title="Tiger is walking" width="400" />
+      <img class="messi" src="images/Messi.jpg" alt="Messi" title="Messi" width="400">
+    </div>
+
+    <script>
+        let x = document.querySelector("img");
+        let messi = document.querySelector(".messi");
+        function enlarge(x) {
+            let w = x.width;
+            x.width = w * 1.5;
+            let h = document.querySelector("h1");
+            h.innerText = "Tiger";
+            console.log("Done!");   
+        }
+        function reduce(x){
+            let w = x.width;
+            x.width = w * 2/3;
+        }
+        x.onmouseover = function(){
+            enlarge(x);
+        }
+        x.onmouseout = function(){
+            reduce(x);
+        }
+        messi.onmouseover = function(){
+            enlarge(messi);
+        }
+        messi.onmouseout = function(){
+            reduce(messi);
+        }
+       
+    </script>
+  </body>
+</html>
