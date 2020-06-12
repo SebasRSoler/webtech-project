@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            border: 1px solid lightgray;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .custom-text-area {
+            width: 50%;
+        }
+
+        form {
+            width: 650px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Customer Feedback</h1>
+    <form>
+        <fieldset>
+            <legend>Your Information:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name here"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here">
+        </fieldset>
+    </form>
+    <br /> <br />
+    <form>
+        <fieldset>
+            <legend>Your Review:</legend>
+            <label for="product">What Apple product did your purchase?</label>
+            <select>
+                <option>AirPods Pro</option>
+                <option>AirPods With Wireless Charging Case</option>
+                <option>AirPods With  Charging Case</option>
+            </select>
+            <br /><br />
+            <label>What do you think of this product?</label>
+            <br />
+            <input type="radio" id="great" name="rating" value="great">
+            <label for="great">Great</label>
+            <input type="radio" id="awesome" name="rating" value="awesome">
+            <label for="awesome">Awesome</label>
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+            <br /><br />
+            <label for="comments">Comments</label>
+            <br />
+            <textarea rows="5" class="custom-text-area"></textarea>
+            <br />
+            <input type="checkbox" id="updates" name="updates" checked value="updates">
+            <label for="updates">Sign me up for email updates</label><br>
+            <br />
+            <input type="button"  value="Submit"/>
+            <input type="button" value="Reset" />
+        </fieldset>
+    </form>
+
+</body>
+</html>
