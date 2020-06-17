@@ -39,16 +39,34 @@
       <button>I Want to Be Tall!</button>
     </div>
 
-    </div>
     <script>
-        document.querySelector("h1").onclick = 
-        function (){
-            center(h1);
+        const heading = document.querySelector("h1");
+      function centerHeading() {
+       
+        if(heading.style.textAlign == "center"){
+            heading.style.textAlign="";
         }
-        document.querySelector("button").onclick = 
-            function(){
-                changeimage
-            }
+        else{
+            heading.style.textAlign="center"
+        }
+      }
+
+      heading.onclick = centerHeading;
+
+      let celticImage = document.querySelector("img");
+
+      function changeImg() {
+        
+        celticImage.src = "images/tacko-fall.png";
+        heading.innerText = "Tacko Fall";
+      }
+
+      document.querySelector("button").onclick = function () {
+        changeImg();
+      
+      };
+
+
     </script>
   </body>
 </html>
