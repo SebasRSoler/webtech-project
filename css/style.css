@@ -21,6 +21,10 @@ header {
     background: #98002e;
 }
 
+.video{
+    text-align:center
+}
+
 h1 {
     font-size: 38px;
 }
