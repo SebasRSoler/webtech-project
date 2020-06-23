@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        .td-one {
+            width: 15%;
+        }
+
+        .td-two {
+            width: 30%;
+        }
+
+        .td-three {
+            width: 30%;
+        }
+
+        .td-four {
+            width: 10%;
+        }
+
+        .td-five {
+            width: 10%;
+        }
+
+        .red {
+            color: red;
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 38px;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid lightgray;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid lightgray;
+            padding: 30px 5px;
+            text-align: center;
+        }
+
+        .btn {
+            background: linear-gradient(#51a9ee,#147bcd);
+            text-decoration: none;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 2px;
+        }
+
+            .btn:hover {
+                opacity: 0.9;
+            }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>AirPods</caption>
+        <tr>
+            <td class="td-one">
+                <b> AirPods Pro </b>
+            </td>
+            <td class="td-two">
+                <img src="images/img1.jpg" alt="img" />
+            </td>
+            <td class="td-three"> AirPods Pro</td>
+            <td class="td-four">$249.00</td>
+            <td class="td-five">
+                <a href="https://www.apple.com/" target="_blank" class="btn">
+                    Buy
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-one" rowspan="2">
+                <b> AirPods Pro </b>
+            </td>
+            <td class="td-two" rowspan="2">
+                <img src="images/img2.jpg" alt="img" />
+            </td>
+            <td class="td-three"> AirPods with wireless charging case</td>
+            <td class="td-four">$199.00</td>
+            <td class="td-five">
+                <a href="https://www.apple.com/" target="_blank" class="btn">
+                    Buy
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-three" rowspan="2"> AirPods with  charging case</td>
+            <td class="td-four"><del>$150.00</del><br /><span class="red"><b>$129.00</b></span></td>
+            <td class="td-five">
+                <a href="https://www.apple.com/" target="_blank" class="btn">
+                    Buy
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- I, [My Name], pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work  -->
+
+</body>
+</html>
