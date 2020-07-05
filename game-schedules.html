@@ -33,14 +33,14 @@
     
     <div>
         <center>
-            <h2 class="gray">
-                2019-20 SEASON
-            </h2>
+            <h1 class="animated-h gray" onClick="showtable1();">
+                + 2019-20 SEASON
+            </h1>
         </center>
     </div>
     <br />
     <center>
-        <table border="1" class="game-schedule">
+        <table border="1" class="game-schedule" id="table1" style="display: none;">
             <tr>
                 <td>
                     <h2>TUESDAY</h2>
@@ -152,15 +152,15 @@
     <br />
     <div>
         <center>
-            <h1>
-                Regular Season
+            <h1 class="animated-h gray" onClick="showtable2();">
+                + Regular Season
             </h1>
         </center>
     </div>
     <br />
 
     <center>
-        <table border="1" class="game-schedule">
+        <table border="1" class="game-schedule" id="table2" style="display: none;">
             <tr>
                 <td>
                     <h2>WEDNESDAY</h2>
@@ -285,5 +285,7 @@
             <b>  Copyright @ 2020 NBA LLC. All rights reserved. </b>
         </center>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript"  src="js/javascript.js"></script>
 </body>
 </html>

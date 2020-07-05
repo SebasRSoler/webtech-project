@@ -1,209 +1,29 @@
-body {
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: Roboto-Regular;
-    background: #111;
-}
-
-@font-face {
-    font-family: Roboto-Regular;
-    src: url(../fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(../fonts/Roboto-Bold.ttf);
-}
-
-header {
-    width: 100%;
-    background: #98002e;
-}
-
-.video{
-    text-align:center
-}
-
-h1 {
-    font-size: 38px;
-}
-
-.main-heading {
-    font-size: 59px;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    font-family: Roboto-Bold;
-    text-shadow: 1px 1px 1px black;
-}
-
-.sp1 {
-    color: #F44336;
-}
-
-.sp2 {
-    color: #EF6C00;
-}
-
-header nav a {
-    color: white;
-    display: inline-block;
-    padding: 20px 17px;
-    font-size: 16px;
+/******** hover ************/
+nav center a, footer a {
     text-decoration: none;
 }
 
-    header nav a:hover {
-        background: #EF6C00;
-    }
-
-.news h2 {
-    color: #FFE0B2;
+.ahover , footer .ahover {
+	padding-left: 5px;
+	padding-right: 5px;
+    border: 2px solid #67cc67;
+    transform: scale(2);
+    color: #67cc67;
+    font-size: 20px;
 }
 
-.team td {
-    padding: 15px;
-    background: rgba(133, 92, 92, 0.38);
+nav center a.active , footer a.active {
+	padding-left: 5px;
+	padding-right: 5px;
+    border: 2px solid #67cc67;
+    transform: scale(2);
+    color: #67cc67;
+    font-size: 20px;
 }
 
-.team p {
-    margin: 0px;
-    padding: 0px;
+nav {
+    margin-top: 20px;
 }
-
-.team h2 {
-    margin: 7px 0px;
-    font-size: 17px;
-}
-
-.team h1 {
-    font-size: 23px;
-}
-
-.game-schedule a {
-    background: #EF6C00;
-    display: inline-block;
-    text-align: center;
-    font-size: 17px;
-    text-decoration: none;
-    padding: 13px;
-    margin: 15px;
-    color: white;
-    border-radius: 5px;
-    letter-spacing: 0.4px;
-}
-
-    .game-schedule a:hover {
-        background: #98002e;
-    }
-
-.game-schedule td {
-    padding: 15px;
-}
-
-.game-schedule p {
-    margin: 0px;
-    padding: 0px;
-}
-
-.game-schedule h2 {
-    margin: 7px 0px;
-    font-size: 17px;
-}
-
-.game-schedule h1 {
-    font-size: 26px;
-}
-
-.game-schedule .score {
-    color: #9CCC65;
-}
-
-.gray {
-    color: #dddcdc;
-}
-
-.image {
-    width: 100%;
-}
-
-.content {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.feedback-form input, .feedback-form textarea, .feedback-form button {
-    width: 100%!important;
-}
-
-.form-style {
-    background: rgba(133, 92, 92, 0.38);
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    padding: 30px;
-}
-
-    .form-style input {
-        width: 300px;
-        padding: 10px;
-    }
-
-    .form-style textarea {
-        width: 300px;
-        padding: 10px;
-    }
-
-    .form-style .form-btn {
-        width: 200px;
-        margin-top: 17px;
-        background: #EF6C00;
-        display: inline-block;
-        text-align: center;
-        font-size: 15px;
-        text-decoration: none;
-        padding: 11px;
-        color: white;
-        border-radius: 5px;
-        letter-spacing: 0.4px;
-        box-shadow: none;
-        border: 1px solid #EF6C00;
-    }
-
-        .form-style .form-btn:hover {
-            background: #98002e;
-            border: 1px solid #98002e;
-        }
-
-
-.feedback-form label {
-    display: inline-block;
-    width: 200px;
-}
-
-
-footer {
-    background: #333;
-    margin: 0px;
-    padding: 15px 5px 30px 15px;
-    color: white;
-}
-
-    footer nav a {
-        color: white;
-        display: inline-block;
-        padding: 17px;
-        font-size: 15px;
-        text-decoration: none;
-    }
-
-        footer nav a:hover {
-            color: #c3c1c1;
-        }
-
-
-
-
 
 
 /********* slide show *****************/
@@ -216,7 +36,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -325,16 +145,8 @@ img {vertical-align: middle;}
   width:100%;
   overflow:hidden;
   position:relative;
-  margin-top: -18px;
 }
-
-#display a
-{
-text-decoration: none;
-}
-
 #text{
-    width: 100%!important;
   cursor:pointer;
   overflow:hidden;
   position:absolute;
@@ -345,12 +157,12 @@ text-decoration: none;
 }
 
 #text a{
-    color:white;
+	color:white;
 }
 
 .animated-h
 {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 
