@@ -27,7 +27,7 @@ function showSlides(n) {
 }
 
 
-/************ images change on mousein and mouse out fucntion *********/
+
 
 function addHoverClass(x) {
   x.classList.add("ahover");
@@ -48,7 +48,7 @@ el.src = url;
 
 
 
-/************* blog form validation **************/
+
 $("#form1").submit(function(){
   var name=$("#name").val();
   var email=$("#email").val();
@@ -73,7 +73,7 @@ $("#form1").submit(function(){
 });
 
 
-/************* contact form validation **************/
+
 
 $("#form2").submit(function(){
   var fname=$("#fname").val();
@@ -100,7 +100,7 @@ $("#form2").submit(function(){
 });
 
 
-/*********** show table animations using jquery ****/
+
 function showtable1()
 { 
 $("#table1").show("slow");
@@ -117,13 +117,7 @@ $("#table1").hide();
 
 
 
-/********** jquey animation *******/
 
-
-
-
-
-/******** jquery based moving text **************/
 
 function marquee(a, b) {
     var width = b.width();
@@ -137,7 +131,7 @@ function marquee(a, b) {
         }
         else {
             time = (parseInt(b.position().left, 10) - end_pos) *
-                (10000 / (start_pos - end_pos)); // Increase or decrease speed by changing value 10000
+                (10000 / (start_pos - end_pos)); 
             b.animate({
                 'left': -width
             }, time, 'linear', function() {
@@ -152,18 +146,18 @@ function marquee(a, b) {
     });
     scroll(a, b);
     
-    b.mouseenter(function() {     // Remove these lines
-        b.stop();                 //
-        b.clearQueue();           // if you don't want
-    });                           //
-    b.mouseleave(function() {     // marquee to pause
-        scroll(a, b);             //
-    });                           // on mouse over
+    b.mouseenter(function() {     
+        b.stop();                 
+        b.clearQueue();           
+    });                           
+    b.mouseleave(function() {     
+        scroll(a, b);             
+    });                           
     
 }
 
 $(document).ready(function() {
-    marquee($('#display'), $('#text'));  //Enter name of container element & marquee element
+    marquee($('#display'), $('#text'));  
 });
 
 
